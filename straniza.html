@@ -12,27 +12,61 @@
             height: 400px;
             background-color: indigo;
             position: relative;
+            display:flex;
             flex-direction: column;
         }
+
         .item-1 {
             height: 100%;
             background-color: brown;
             margin: 5px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+        }
+        .item-2 {
+            display: flex;
+            justify-content: space-around;
+            flex-basis: 20%;
+        }
+        .info {
+            display: flex;
+            width: 70%;
+            margin: .4em;
+            background-color: darkgreen;
+            align-items: center;
+            justify-content: center;
+        }
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .text {
+            color: black;
         }
 </style>
 <body>
     <div class="container">
         <div class="item-1">
+            <h1>Описание sayta</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum consequuntur tempore dicta aut, sequi at beatae optio, minima dolorum praesentium cumque voluptatibus laborum laboriosam repudiandae deleniti mollitia numquam itaque! At?</p>
 
         </div>
         <div class="item-2">
-            <div class="info">
-
-            </div>
-            <div class="info">
-
-            </div>
-        </div>
+            <a class="info" href="index.html">
+                <span class="text">
+                    Войти!
+                </span>
+            </a>
+                <a class="info" href="https://www.youtube.com/watch?v=qq1FSkySW1w">
+                    <span class="text">
+                        Пошёл ты!
+                    </span>
+                </a>
+          </div>
     </div>
 </body>
 </html>
